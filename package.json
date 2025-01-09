@@ -1,0 +1,38 @@
+{
+    "name": "vscode-color-format-picker",
+    "displayName": "Color Format Picker & Preview",
+    "description": "Provides color hover & picker support for CSS variables in 'H S% L%' format",
+    "version": "0.0.1",
+    "repository": {
+        "url": "https://github.com/h4rry94/vscode-color-format-picker.git",
+    },
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "publisher": "h4rry94",
+    "categories": [
+        "Other"
+    ],
+    "contributes": {
+        "colors": [
+            {
+                "id": "colorFormatPicker"
+            }
+        ],
+        "languages": [
+            {
+                "id": "css"
+            }
+        ]
+    },
+    "activationEvents": [
+        "onLanguage:css"
+    ],
+    "main": "./extension.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
